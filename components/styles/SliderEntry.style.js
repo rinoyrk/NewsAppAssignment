@@ -13,6 +13,7 @@ const slideHeight = viewportHeight * 0.25;
 const slideWidth = wp(75);
 const categorySlideWidth = wp(50);
 const itemHorizontalMargin = wp(1);
+const categoryItemHorizontalMargin = wp(2);
 
 export const sliderWidth = viewportWidth;
 export const categorySliderWidth = viewportWidth - 20;
@@ -26,6 +27,12 @@ export default StyleSheet.create({
         height: slideHeight,
         paddingHorizontal: itemHorizontalMargin,
     },
+
+    categoryInnerContainer: {
+        width: itemWidth,
+        height: slideHeight,
+        paddingHorizontal: categoryItemHorizontalMargin,
+    },
    
     imageContainer: {
         flex: 1,
@@ -36,15 +43,16 @@ export default StyleSheet.create({
     image: {
         ...StyleSheet.absoluteFillObject,
         resizeMode: 'cover',
+        borderRadius: 8,
     },
     imageStyle: {
-        width: '100%',
-        height: '100%'
+        flex: 1,
+        borderRadius: 8,
     },
     imageTextStyle: {
         fontFamily: 'Roboto',
         color: '#ffffff',
-        fontSize: 13,
+        flex: 1,
         fontWeight: 'bold',
     }
    

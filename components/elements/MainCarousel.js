@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Platform, View, StyleSheet, Dimensions } from 'react-native';
+import { View, StyleSheet, Dimensions } from 'react-native';
 import Carousel, { Pagination } from 'react-native-snap-carousel';
 import { sliderWidth, itemWidth } from '../styles/SliderEntry.style';
 import SliderEntry from '../elements/SliderEntry';
@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
         flex: 1
     },
     viewContainer: {
-        paddingVertical: 30,
+        paddingVertical: 20,
     },
     slider: {
         marginTop: 0,

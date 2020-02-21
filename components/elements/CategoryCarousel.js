@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
         flex: 1
     },
     viewContainer: {
-        paddingVertical: 30,
+        paddingVertical: 10,
     },
     slider: {
         marginTop: 0,

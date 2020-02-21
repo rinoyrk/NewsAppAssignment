@@ -10,7 +10,7 @@ export default class CategoryEntry extends Component {
 
         return (
             <ImageBackground source={{ uri: image }} style={styles.imageStyle}>
-                <View style={{position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, justifyContent: 'center', alignItems: 'center'}}>
+                <View style={{position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: '#000', opacity: 0.7, padding: 5}}>
                     <Text style={styles.imageTextStyle}>{title}</Text>
                 </View>
             </ImageBackground>
@@ -25,13 +25,11 @@ export default class CategoryEntry extends Component {
         return (
             <TouchableOpacity
               activeOpacity={1}
-              style={styles.slideInnerContainer}
+              style={styles.categoryInnerContainer}
               onPress={() => { Linking.openURL(url) }}
               >
-                <View style={styles.shadow} />
                 <View style={styles.imageContainer}>
                     { this.image }
-                    <View style={styles.radiusMask} />
                 </View>
                 
             </TouchableOpacity>

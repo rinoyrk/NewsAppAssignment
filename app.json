@@ -27,7 +27,8 @@
       "supportsTablet": true
     },
     "android": {
-      "package": "com.project.newsappassignment"
+      "package": "com.project.newsappassignment",
+      "versionCode": 1
     }
   }
 }
